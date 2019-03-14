@@ -1,0 +1,11 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gatewayx
+  cloud:
+    kubernetes:
+      config:
+        sources:
+        - name: ${spring.application.name}
+        - name: default
